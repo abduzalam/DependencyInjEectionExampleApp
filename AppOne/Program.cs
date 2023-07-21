@@ -24,6 +24,7 @@ internal class Program
 
     private static void ConfigureServices(IServiceCollection services)
     {
+        services.AddTransient<MyOtherClass>();
         services.AddTransient<MyClass>();
     }
 }
